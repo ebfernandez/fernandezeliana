@@ -1,0 +1,492 @@
+/*------------------------------------------- GENERAL----------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 100%; 
+}
+
+.secciones {
+  margin: 2rem; 
+}
+  .secciones__titulos, .nosotros__titulos {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    background: #52748b;
+    border-radius: 0.5rem;
+    color: #f0e6e6;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    text-align: center;
+    padding: 0.7rem; 
+  }
+
+
+/*-------------------------------------------- HEADER ---------------------------------*/
+header {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: #262929;
+}
+
+nav ul li a{
+    color: #52748b;    
+    text-decoration: none;
+    font-size: 1rem;   
+}
+
+nav ul li i{
+   padding: 0.5rem;
+}
+
+
+.encabezado{
+    display: flex;      
+    justify-content:space-between;
+    font-size: 1rem;
+    margin-bottom:0.5rem;      
+}
+
+.encabezado li{    
+    list-style-type: none;
+    margin:1rem;
+}
+
+.encabezado li i{
+    margin-inline: 0.5rem;
+}
+
+.encabezado li a {
+    text-decoration: none;
+    color: rgb(90, 128, 209);
+
+}
+
+
+.estiloLogo{
+  color:rgb(174, 213, 250);
+  font-size: 1.3rem;    
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  padding: 0.5rem;      
+  border-bottom: groove 1rem rgb(82, 116, 139);    
+  border-right: groove 1rem rgb(135, 140, 143);
+  
+}
+
+.estiloLogo span{
+  color: rgb(90, 128, 209);
+}
+
+
+.seccionActiva{
+    color:  rgb(90, 128, 209);
+    font-weight:bold;
+}
+
+.flexMenu{
+    display: flex;
+    flex-direction: column;    
+}
+
+.flexMenu ul{
+    list-style: none;
+    margin-top: 1.5rem;    
+}
+
+
+/*---------------------------------------------FOOTER-----------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #262929; 
+}
+  .footer__lista {
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5rem; 
+  }
+  .footer__link {
+    text-decoration: none;
+    margin: 1rem; 
+  }
+  .footer__icono {
+    color: #52748b; 
+  }
+  .footer__parrafo {
+    color: #5e5d5d;
+  margin-bottom: 1rem; 
+}
+
+
+
+/*-------------------------------LOGO SERVICEJAF------------------------------------*/
+.estiloLogo {
+  color: #aed5fa !important;
+  font-size: 1.3rem;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-bottom: groove 1rem #52748b;
+  border-right: groove 1rem #878c8f; 
+}
+
+  .estiloLogo span {
+    color: #5a80d1; 
+  }
+
+
+
+/*-------------------------------LOGO WHATSAPP------------------------------------*/
+.logoWs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 5; 
+}
+  .logoWs img {
+    width: 60px;
+    height: 60px; 
+  }
+
+/*---------------------------------HOME-----------------------------------------*/
+.grillaFotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+  margin-bottom: 2rem;
+}
+  .grillaFotos img {
+    border-radius: 8rem;
+    border-bottom: groove 0.8rem #722e2e;
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem; 
+  }
+
+.tituloPrincipal .estiloPrincipal, .tituloPrincipal h2, .tituloPrincipal h3 {
+  font-size: 2rem;
+  font-weight: bold; 
+}
+
+.tituloPrincipal h2 {
+  margin-top: 3rem;
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.tituloPrincipal h3 {
+  margin-top: 1rem;
+  color: #722e2e;
+  font-family: 'Chakra Petch', sans-serif; 
+}
+
+.imagenPrincipal {
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 80%; 
+}
+
+.botonPresupuesto {
+  margin: 3rem; 
+}
+
+
+
+/*---------------------------------SERVICIOS-----------------------------------------*/
+.servicios {
+  display: flex;
+  justify-content: center;
+  margin: 2rem; 
+}
+  .servicios i {
+    margin-right: 1rem; 
+  }
+
+.fotosCards {
+  width: auto;
+  height: 15rem; 
+}
+
+  .recuadroGris{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2rem;
+    background: #52748b;
+    border-radius: 0.5rem;
+    color: #f0e6e6;
+    letter-spacing: 0.05rem;
+    margin: 1rem;
+    text-align: center;
+    padding: 0.7rem;
+    
+}
+
+.grillaServicios{    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "c1"
+                            "c2"
+                            "c3";
+                            
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-items:center;
+    align-items: center;   
+
+}
+
+.cajaUno{
+    grid-area: c1;      
+    width: 80%;
+    font-size: 2rem;    
+}
+  
+.cajaDos{
+    grid-area: c2; 
+    width: 80%;
+    font-size: 2rem;   
+}
+
+.cajaTres{
+    grid-area: c3;       
+    width: 80%;
+    font-size: 2rem;    
+}
+
+
+/*-------------------------------ZONAS DE COBERTURA------------------------------------*/
+iframe {
+  width: 380px;
+  height: 220px;
+  border-radius: 12px; 
+}
+
+/*------------------------------------CONTACTO---------------------------------------*/
+.contacto {
+  display: block; 
+}
+
+.formContacto {
+  background-color: #878c8f;
+  border-radius: 1rem;
+  flex-basis: 40%;
+  padding: 1rem;
+  margin: 1rem; 
+}
+  .formContacto ul li {
+    list-style-type: none;
+    margin: 1rem; 
+  }
+  .formContacto ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 0.5rem;
+    color: #f0e6e6;
+    letter-spacing: 0.05rem;
+    padding: 0.7rem; 
+  }
+  .formContacto ul li i {
+    margin-right: 0.5rem;
+    color: #105481; 
+  }
+
+.mapaContacto {
+  width: 300px;
+  height: 200px; }
+
+
+
+/*-------------------------------NOSOTROS------------------------------------*/
+.grillaNosotros {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 2fr); 
+}
+
+.nosotros {
+  margin: 2rem;
+  text-align: left; 
+}
+  .nosotros__parrafos {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0 0 1.5rem; 
+  }
+
+.imagenNosotros {
+  margin: 0 0 0 0; 
+}
+
+
+
+/*---------------------------------MEDIA QUERIES------------------------------------*/
+@media only screen and (min-width: 600px) {
+  
+.encabezado{
+    display: flex;      
+    justify-content: center;  
+    font-size: 1.2rem; 
+}
+
+.flexMenu{
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+}
+
+.flexMenu ul{
+    display: flex;         
+ }       
+ .flexMenu li{                 
+    margin: 1rem ;           
+}     
+ .flexMenu ul li a{        
+    font-size: 1.4rem ;     
+}
+
+
+  .footer__lista {
+    font-size: 1.5rem; 
+  }
+  .logoWs img {
+    width: 80px;
+    height: 80px; 
+  }
+  iframe {
+    width: 600px;
+    height: 250px;
+    margin: 2rem; }
+
+  .imagenPrincipal {
+    width: auto; 
+  }
+  .contacto {
+    display: flex;
+    justify-content: space-evenly; 
+  }
+  .imagenNosotros {
+    margin: 0 0 3rem 0; 
+  }   
+  
+  }
+
+@media only screen and (min-width: 992px) {
+
+  header{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.encabezado{
+  justify-content: flex-end;     
+  font-size: 1rem;   
+}
+
+.flexMenu{
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 0 2rem 2rem 2rem;    
+}
+
+.flexMenu li{                 
+  margin: 0.5rem ;     
+    
+}
+
+.flexMenu ul li a{
+  font-weight: bold;
+  font-size: 1.2rem ;        
+}
+
+  .estiloLogo {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem; 
+  }
+  .footer__icono:hover {
+    transform: scale(2, 2); 
+  }
+  .logoWs img {
+    width: 100px;
+    height: 100px; 
+  }
+  .logoWs:hover {
+    transform: scale(1.3, 1.3); 
+  }
+  .grillaFotos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; 
+  }
+    .grillaFotos img {
+      width: 120px;
+      height: 120px; 
+    }
+  iframe {
+    width: 750px;
+    height: 350px;
+    margin: 2rem; 
+  }
+  h2, h3 {
+    font-size: 1.5rem; 
+  }
+  nav ul li a:hover {
+    background-color: black;
+    border-radius: 10px;
+    color: #aed5fa;
+    padding: 0.5rem;
+    font-weight: bold; 
+  }
+  .escalaLogos:hover {
+    transform: scale(1.5, 1.5);
+    transition: 1s; 
+  }
+  .grillaNosotros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+  }
+  .nosotros__titulos {
+    display: inline-block; 
+  } 
+  
+  .recuadroGris{
+      padding: 2.5rem;
+      margin:2rem;        
+      font-size: 1.3rem;                  
+  }
+  .grillaServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    "c1  c1"
+                            "c2  c3";    
+}
+
+  .cajaUno{        
+      width: 30%;
+      font-size: 2rem;
+  }  
+  .cajaDos{   
+      width: 50%;
+      font-size: 2rem;    
+  }
+  .cajaTres{
+      width: 50%;
+      font-size: 2rem;
+  }
+}
